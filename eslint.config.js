@@ -20,5 +20,15 @@ export default defineConfig([
       globals: globals.browser,
     },
   },
+  {
+    // shadcn components import these from their component files, so they stay put
+    files: ['src/components/ui/**/*.tsx'],
+    rules: {
+      'react-refresh/only-export-components': [
+        'error',
+        { allowConstantExport: true, allowExportNames: ['buttonVariants'] },
+      ],
+    },
+  },
   prettierConfig,
 ])
