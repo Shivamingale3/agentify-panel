@@ -41,6 +41,7 @@ npm run format    # Prettier (with tailwind class sorting)
 
 ## Code guidelines
 
+- **Code Splitting** Don't go stuffing all kind of code in a single file even it it belongs to the same module. Types, constants, declarations, UI, service logic all should be in separate files and organized in folders. Example, if you're creating a new widget for agents, then create a new folder for it and put all the files in it. Don't put all the files in the components folder.
 - **Think first.** Understand the problem, trace the code it touches, break it
   into small pieces, then write code. Ask when something is ambiguous instead
   of guessing. Jumping straight to code is how scope creep and endless
