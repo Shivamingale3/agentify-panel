@@ -9,12 +9,12 @@
     <!-- Apply the saved theme before first paint so there's no flash. Key must match THEME_STORAGE_KEY. -->
     <script>
       try {
-        var t = localStorage.getItem('agentify-theme')
+        var t = localStorage.getItem('agentify-theme');
       } catch (e) {}
       var dark =
-        t === 'dark' || (t !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches)
-      document.documentElement.classList.toggle('dark', dark)
-      document.documentElement.style.colorScheme = dark ? 'dark' : 'light'
+        t === 'dark' || (t !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.classList.toggle('dark', dark);
+      document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
     </script>
   </head>
   <body>
